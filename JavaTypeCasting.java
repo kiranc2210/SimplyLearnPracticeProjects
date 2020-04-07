@@ -22,6 +22,8 @@ public class JavaTypeCasting {
 
 		int in = 199;
 		byte myByte = (byte) in; // Manual casting: int to byte
+		
+		Integer intg= new Integer(252);
 
 		System.out.println(i);// 125
 		System.out.println(f);// 125.0
