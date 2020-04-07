@@ -1,0 +1,15 @@
+Set Up Git and Create a Repository
+
+DESCRIPTION
+
+This section will guide you to:
+
+Create your GitHub account
+Connect from local Git repository to remote GitHub via SSH
+Initiate the first push
+This guide has four subsections, namely:
+
+1.3.1 Setting up your GitHub account
+1.3.2 Creating SSH-key and adding it to GitHub
+1.3.3 Logging at local Git to connect with remote GitHub
+1.3.4 Creating a repository in your GitHub account
