@@ -6,8 +6,26 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class JavaEmailValidation {
+	
+	public static void validateEmail(ArrayList<String> mails) {
+		
+      String emailRegx="^[A-Za-z0-9._-]+@[a-z]+(.+)$";
+		
+		Pattern pattern=Pattern.compile(emailRegx);
+		
+		for(String email : mails){
+			
+		
+		Matcher match=pattern.matcher(email);
+		
+		System.out.println(email +"  "+":"+"   "+match.matches());
+		System.out.println();
+		
+	}
+}
 
 	public static void main(String[] args) {
+		
 		ArrayList<String>emails=new ArrayList<>();
 		
 		emails.add("kiran@gamil.com");
@@ -25,19 +43,9 @@ public class JavaEmailValidation {
 		emails.add("kiran._er@rehat.com");
 		emails.add("@gamilcom");
 		
-		String emailRegx="^[A-Za-z0-9._-]+@[a-z]+(.+)$";
 		
-		Pattern pattern=Pattern.compile(emailRegx);
-		
-		for(String email : emails){
-			
-		
-		Matcher match=pattern.matcher(email);
-		
-		System.out.println(email +"  "+":"+"   "+match.matches());
-		System.out.println();
+		validateEmail(emails);
 		
 		}
 	}
-}
 
